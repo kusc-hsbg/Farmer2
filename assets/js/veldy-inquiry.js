@@ -163,7 +163,7 @@
           var label = pr ? [].map.call(pr.querySelectorAll('span'), function (s) { return s.textContent; }).join('').replace(/\s+/g, '').toLowerCase() : '';
           if (label === 'contact') {
             e.preventDefault(); e.stopPropagation();
-            window.location.href = 'https://kusc-hsbg.github.io/farmer/contact.html';
+            window.location.href = 'https://kusc-hsbg.github.io/Farmer2/contact.html';
             return;
           }
         }
