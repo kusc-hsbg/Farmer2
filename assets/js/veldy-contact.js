@@ -81,10 +81,10 @@
     return fillRolling(document.createElement('span'), text);
   }
 
-  // replace the visible text ("kakao") of a cloned row with a new label
+  // replace the visible text ("Kakao Talk") of a cloned row with a new label
   function relabelText(root, label) {
     [].forEach.call(root.querySelectorAll('*'), function (n) {
-      if (n.childElementCount === 0 && /^kakao$/i.test((n.textContent || '').trim())) n.textContent = label;
+      if (n.childElementCount === 0 && /^kakao(\s| )*(talk)?$/i.test((n.textContent || '').trim())) n.textContent = label;
     });
   }
 
